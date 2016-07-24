@@ -28,15 +28,14 @@ if(!class_exists('ark')) {
 		protected static $apiLevel	= 20;
 		public $version				= '0.1.0';
 		protected $this_game		= 'ark';
-		protected $types			= array();						// which information are stored?
+		protected $types			= array('classes','roles');
 		protected $classes			= array();
-		protected $roles			= array();						// for each type there must be the according var
-		protected $factions			= array();						// and the according function: load_$type
+		protected $roles			= array();
+		protected $factions			= array();
 		protected $filters			= array();
 		protected $realmlist		= array();
 		protected $professions		= array();
-		public $langs				= array('german');	// in which languages do we have information?
-
+		public $langs				= array('german','english');
 		protected $class_dependencies = array();
 		public $default_roles		= array();
 		protected $class_colors		= array();
@@ -61,7 +60,170 @@ if(!class_exists('ark')) {
 		}
 
 		public function profilefields(){
-			// array with fields
+			$this->load_type('equip_head', array($this->lang));
+			$this->load_type('equip_body', array($this->lang));
+			$this->load_type('equip_leg', array($this->lang));
+			$this->load_type('equip_feet', array($this->lang));
+			$this->load_type('equip_hand', array($this->lang));
+			$fields = array(
+			//Profilfelden reiter charakter
+				'level'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'character',
+					'lang'			=> 'uc_level',
+					'max'			=> 500,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 1,
+				),
+			//Profilfelden reiter Stats
+				'life'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_life',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 1,
+				),
+				'stamina'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_stamina',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 2,
+				),
+				'oxygen'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_oxygen',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 3,
+				),
+				'food'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_food',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 4,
+				),
+				'water'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_water',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 5,
+				),
+				'weight'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_weight',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 6,
+				),
+				'damage'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_damage',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 7,
+				),
+				'speed1'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_speed1',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 8,
+				),
+				'resistance'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_resistance',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 9,
+				),
+				'speed2'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_speed2',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 10,
+				),
+				'torpor'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'stats',
+					'lang'			=> 'uc_torpor',
+					'max'			=> 1000000,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 11,
+				),
+			// Equipment	
+				'head'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_head',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_head[$this->lang],
+					'sort'			=> 1,
+				),
+				'body'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_body',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_body[$this->lang],
+					'sort'			=> 2,
+				),
+				'legs'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_leg',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_leg[$this->lang],
+					'sort'			=> 3,
+				),
+				'feet'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_feet',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_feet[$this->lang],
+					'sort'			=> 4,
+				),
+				'hand'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_hand',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_hand[$this->lang],
+					'sort'			=> 5,
+				),
+			);
+			return $fields;
 		}
 
 		public function admin_settings() {
