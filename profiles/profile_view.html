@@ -1,0 +1,108 @@
+	<div>
+		<div>
+		<br />
+			<div align="center"><h1>{CHARDATA_NAME}</h1></div>
+		</div>
+		<div align="center"><h2>{GL_uc_engrams}</h2></div>
+		<div align="center">
+		<!-- BEGIN thatchB -->
+		<a target="_blank" title="{thatchB.NAME}" href="http://ark.gamepedia.com/{thatchB.NAME}">
+			<img class="gameicon" src="{thatchB.ICON}"alt=""/>
+		</a>
+		<!-- END thatchB -->
+		</div>
+		<br />
+		<div align="center">
+		<!-- BEGIN woodB -->
+		<a target="_blank" title="{woodB.NAME}" href="http://ark.gamepedia.com/{woodB.NAME}">
+			<img class="gameicon" src="{woodB.ICON}"alt=""/>
+		</a>
+		<!-- END woodB -->
+		</div>
+	</div>
+	<div class="tableHeader">
+		<h2>{L_DKP_NAME}</h2>
+	</div>
+<input type="checkbox" onchange="window.location='{SID}&with_twinks='+ ((this.checked) ? 0 : 1)" name="with_twinks" value="1" <!-- IF not S_WITH_TWINK_DKP -->checked="checked"<!-- ENDIF -->/> {L_points_for_this_char}
+<br /><br />
+<table class="table fullwidth hptt colorswitch scrollable-x borderless">
+	{MEMBER_POINTS}
+</table>
+<br/>
+
+
+
+
+<div id='profile_information'>
+	<ul>
+		<!-- IF CUSTOM_FIELDS --><li><a href='#fragment-2-0'><span>{L_tab_customfields}</span></a></li><!-- ENDIF -->
+		<li><a href='#fragment-2-1'><span>{L_tab_raids}</span></a></li>
+		<li><a href='#fragment-2-2'><span>{L_tab_items}</span></a></li>
+		<!-- IF not S_POINTS_DISABLED -->
+		<li><a href='#fragment-2-3'><span>{L_tab_adjustments}</span></a></li>
+		<!-- ENDIF -->
+		<li><a href='#fragment-2-4'><span>{L_tab_attendance}</span></a></li>
+	</ul>
+
+	<!-- ALL PROFILE FIELDS TABLE -->
+	<!-- IF CUSTOM_FIELDS -->
+	<div id="fragment-2-0">
+		<fieldset class="settings mediumsettings">
+			<!-- BEGIN pfield_custom -->
+			<dl>
+				<dt><label>{pfield_custom.NAME}</label></dt>
+				<dd>{pfield_custom.VALUE}</dd>
+			</dl>
+			<!-- END pfield_custom -->
+		</fieldset>
+	</div>
+	<!-- ENDIF -->
+
+	<!-- RAIDS TABLE -->
+	<div id="fragment-2-1">
+		<div class="tableHeader">
+			<h2>{L_raid_attendance_history}</h2>
+		</div>
+		<table class="table fullwidth hptt colorswitch scrollable-x">
+		{RAID_OUT}
+		</table>
+		<div class="center pagination_wrapper">
+			{RAID_PAGINATION}
+		</div>
+	</div>
+
+	<!-- ITEMS TABLE -->
+	<div id="fragment-2-2">
+		<div class="tableHeader">
+			<h2>{L_item_purchase_history}</h2>
+		</div>
+		<table class="table fullwidth hptt colorswitch scrollable-x">
+		{ITEM_OUT}
+		</table>
+		<div class="center pagination_wrapper">
+			{ITEM_PAGINATION}
+		</div>
+	</div>
+	
+	<!-- IF not S_POINTS_DISABLED -->
+	<!-- ADJUSTMENTS TABLE-->
+	<div id="fragment-2-3">
+		<div class="tableHeader">
+			<h2>{L_individual_adjustment_history}</h2>
+		</div>
+		<table class="table fullwidth hptt colorswitch scrollable-x">
+		{ADJUSTMENT_OUT}
+		</table>
+		<div class="center pagination_wrapper">
+			{ADJUSTMENT_PAGINATION}
+		</div>
+	</div>
+	<!-- ENDIF -->
+
+	<!-- ATTENDANCE -->
+	<div id="fragment-2-4">
+		<table class="table fullwidth hptt colorswitch scrollable-x">
+		{EVENT_ATT_OUT}
+		</table>
+	</div>
+</div>

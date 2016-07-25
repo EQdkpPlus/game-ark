@@ -65,6 +65,8 @@ if(!class_exists('ark')) {
 			$this->load_type('equip_leg', array($this->lang));
 			$this->load_type('equip_feet', array($this->lang));
 			$this->load_type('equip_hand', array($this->lang));
+			$this->load_type('engram_thatch', array($this->lang));
+			$this->load_type('engram_wood', array($this->lang));
 			$fields = array(
 			//Profilfelden reiter charakter
 				'level'	=> array(
@@ -222,6 +224,35 @@ if(!class_exists('ark')) {
 					'options'		=> $this->equip_hand[$this->lang],
 					'sort'			=> 5,
 				),
+			// Engrams
+				'thatch'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_engram_thatch',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_thatch[$this->lang],
+					'sort'			=> 1,
+				),
+				'wood'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_engram_wood',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_wood[$this->lang],
+					'sort'			=> 2,
+				),
+/*				'stone'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_engram_stone',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_stone[$this->lang],
+					'sort'			=> 3,
+				),
+*/
 			);
 			return $fields;
 		}
