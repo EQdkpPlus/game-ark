@@ -34,6 +34,7 @@ $german_array = array(
 	'lang' => array(
 		'ark'	=> 'ARK: Survival Evolved',
 		'uc_level'	=>	'Stufe',
+		'uc_stats'	=>	'Werte',
 		'uc_cat_stats'	=>	'Werte',
 		'uc_cat_equip'	=>	'Ausrüstung',
 		'uc_cat_engram'	=>	'Engrams',

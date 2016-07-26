@@ -20,9 +20,47 @@
  */
  
 	$this->jquery->Tab_header('char1_tabs');
+	$this->tpl->add_css("
+		.wows-picture {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.wows-picture img {
+			max-width: 800px;
+			padding: 5px;
+		}
+		.wows-tab {
+			outline: none;
+			border-color: #008989;
+			border-radius: 10px; 
+			box-shadow: 0 0 10px #008989;
+			-webkit-box-shadow: 0 0px 10px #008989;
+			-moz-box-shadow: 0 0px 10px #008989;
+		}
+		.statsicon {
+			width: 20px;
+		}
+		.statsfont {
+			color: #008989 !important;
+		}
+		.charnamefont {
+			font-size: 30px !important;
+			color: #008989 !important;
+		}
+		.overlay { 
+			background: #252525; 
+			background: hsla(0,0%,15%,0.3); 
+			color: white; 
+			border-radius: 10px;
+			transition: background 1s;
+		}
+	");
 	
+	$statspath = $this->server_path."games/ark/profiles/pics/stats/";
 	$this->tpl->assign_vars(array(
 		'CHARDATA_NAME'			=> $chardata['name'],
+		'STATS_PATH'			=> $statspath,
 	));
 
 //Thatch	
