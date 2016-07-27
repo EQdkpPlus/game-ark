@@ -36,8 +36,21 @@ if(!class_exists('ark')) {
 		protected $realmlist		= array();
 		protected $professions		= array();
 		public $langs				= array('german','english');
-		protected $class_dependencies = array();
-		public $default_roles		= array();
+		protected $class_dependencies = array(
+			array(
+				'name'		=> 'class',
+				'type'		=> 'classes',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'primary'	=> true,
+				'colorize'	=> true,
+				'roster'	=> true,
+				'recruitment' => true,
+			),
+		);
+		public $default_roles = array( 
+			1 => array(1,2),
+		);
 		protected $class_colors		= array();
 
 		protected $glang			= array();
