@@ -234,6 +234,9 @@ $german_array = array(
 		'Stone_Windowframe'	=>	'Fensterrahmen',
 	),
 	// Dinos
+	
+/*Special thanks @ DaChaky*/
+
 	'dossiers'	=>	array(
 		'Angler'		=>'Angler',
 		'Ankylosaurus'		=>'Ankylosaurus',
