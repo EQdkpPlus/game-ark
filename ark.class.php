@@ -65,8 +65,12 @@ if(!class_exists('ark')) {
 			$this->load_type('equip_leg', array($this->lang));
 			$this->load_type('equip_feet', array($this->lang));
 			$this->load_type('equip_hand', array($this->lang));
+			$this->load_type('equip_offhand', array($this->lang));
+			$this->load_type('resources', array($this->lang));
 			$this->load_type('engram_thatch', array($this->lang));
 			$this->load_type('engram_wood', array($this->lang));
+			$this->load_type('engram_stone', array($this->lang));
+			$this->load_type('dossiers', array($this->lang));
 			$fields = array(
 			//Profilfelden reiter charakter
 				'level'	=> array(
@@ -77,6 +81,16 @@ if(!class_exists('ark')) {
 					'min'			=> 1,
 					'undeletable'	=> true,
 					'sort'			=> 1,
+				),
+			//Dinos
+				'dino'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'character',
+					'lang'			=> 'uc_dossier',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->dossiers[$this->lang],
+					'sort'			=> 2,
 				),
 			//Profilfelden reiter Stats
 				'life'	=> array(
@@ -178,9 +192,9 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'sort'			=> 11,
 				),
-			// Equipment	
+			//Profilfelden reiter Equipment	
 				'head'	=> array(
-					'type'			=> 'multiselect',
+					'type'			=> 'dropdown',
 					'category'		=> 'equip',
 					'lang'			=> 'uc_equip_head',
 					'undeletable'	=> true,
@@ -189,7 +203,7 @@ if(!class_exists('ark')) {
 					'sort'			=> 1,
 				),
 				'body'	=> array(
-					'type'			=> 'multiselect',
+					'type'			=> 'dropdown',
 					'category'		=> 'equip',
 					'lang'			=> 'uc_equip_body',
 					'undeletable'	=> true,
@@ -198,7 +212,7 @@ if(!class_exists('ark')) {
 					'sort'			=> 2,
 				),
 				'legs'	=> array(
-					'type'			=> 'multiselect',
+					'type'			=> 'dropdown',
 					'category'		=> 'equip',
 					'lang'			=> 'uc_equip_leg',
 					'undeletable'	=> true,
@@ -207,7 +221,7 @@ if(!class_exists('ark')) {
 					'sort'			=> 3,
 				),
 				'feet'	=> array(
-					'type'			=> 'multiselect',
+					'type'			=> 'dropdown',
 					'category'		=> 'equip',
 					'lang'			=> 'uc_equip_feet',
 					'undeletable'	=> true,
@@ -216,7 +230,7 @@ if(!class_exists('ark')) {
 					'sort'			=> 4,
 				),
 				'hand'	=> array(
-					'type'			=> 'multiselect',
+					'type'			=> 'dropdown',
 					'category'		=> 'equip',
 					'lang'			=> 'uc_equip_hand',
 					'undeletable'	=> true,
@@ -224,35 +238,52 @@ if(!class_exists('ark')) {
 					'options'		=> $this->equip_hand[$this->lang],
 					'sort'			=> 5,
 				),
-			// Engrams
+				'offhand'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'equip',
+					'lang'			=> 'uc_equip_offhand',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->equip_offhand[$this->lang],
+					'sort'			=> 6,
+				),
+			//Profilfelden reiter Engrams
+				'resources'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_resources',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->resources[$this->lang],
+					'sort'			=> 1,
+				),
 				'thatch'	=> array(
 					'type'			=> 'multiselect',
 					'category'		=> 'engram',
-					'lang'			=> 'uc_engram_thatch',
+					'lang'			=> 'uc_thatch',
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_thatch[$this->lang],
-					'sort'			=> 1,
+					'sort'			=> 2,
 				),
 				'wood'	=> array(
 					'type'			=> 'multiselect',
 					'category'		=> 'engram',
-					'lang'			=> 'uc_engram_wood',
+					'lang'			=> 'uc_wood',
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_wood[$this->lang],
-					'sort'			=> 2,
+					'sort'			=> 3,
 				),
-/*				'stone'	=> array(
+				'stone'	=> array(
 					'type'			=> 'multiselect',
 					'category'		=> 'engram',
-					'lang'			=> 'uc_engram_stone',
+					'lang'			=> 'uc_stone',
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_stone[$this->lang],
-					'sort'			=> 3,
+					'sort'			=> 4,
 				),
-*/
 			);
 			return $fields;
 		}

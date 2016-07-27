@@ -62,7 +62,18 @@
 		'CHARDATA_NAME'			=> $chardata['name'],
 		'STATS_PATH'			=> $statspath,
 	));
-
+//resources	
+	$resources = $this->pdh->get('member', 'profile_field', array($this->url_id, 'resources'));
+	$count = count ($resources);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/engram/".$resources[$i].".png";
+		$this->tpl->assign_block_vars(
+			'resourcesB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $resources[$i],
+			)
+		);	
+	}
 //Thatch	
 	$thatch = $this->pdh->get('member', 'profile_field', array($this->url_id, 'thatch'));
 	$count = count ($thatch);
@@ -87,6 +98,29 @@
 			)
 		);	
 	}
-
+//Stone
+	$stone = $this->pdh->get('member', 'profile_field', array($this->url_id, 'stone'));
+	$count = count ($stone);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/engram/".$stone[$i].".png";
+		$this->tpl->assign_block_vars(
+			'stoneB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $stone[$i],
+			)
+		);	
+	}
+//Dino
+	$dino = $this->pdh->get('member', 'profile_field', array($this->url_id, 'dino'));
+	$count = count ($dino);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/pics/dossier/".$dino[$i].".png";
+		$this->tpl->assign_block_vars(
+			'dinoB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $dino[$i],
+			)
+		);	
+	}
 
 ?>
