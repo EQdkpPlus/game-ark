@@ -24,6 +24,7 @@ if ( !defined('EQDKP_INC') ){
 }
 $german_array = array(
 	'classes' => array(
+		0	=>	'Wähle',
 		1	=>	'Weiblich',
 		2	=>	'Männlich',
 	),
@@ -70,8 +71,8 @@ $german_array = array(
 		//
 		'uc_resource'	=>	'Resourcen',
 		//
-		'uc_structures'	=>	'Strukturen',
 		'uc_containers'	=>	'Behälter',
+		'uc_misc'	=>	'Sonstiges',
 		'uc_crafting_station'	=>	'Handwerkstationen',
 		'uc_thatch'	=>	'Stroh',
 		'uc_wood'	=>	'Holz',
@@ -166,6 +167,7 @@ $german_array = array(
 		'Riot_Shield'	=>	'Riotschild',
 	),
 //Engram,Variablennamen nach http://ark.gamepedia.com/Crafting
+//Resourcen
 	'resources'	=>	array(
 		'Sparkpowder'	=>	'Zündpulver',
 		'Gunpowder'	=>	'Schießpulver',
@@ -174,6 +176,45 @@ $german_array = array(
 		'Electronics'	=>	'Elektroteile',
 		'Absorbent_Substrate'	=>	'Absorbierte Substrate',
 	),
+//Strukturen
+	'engram_misc'	=>	array(
+		'Hide_Sleeping_Bag'	=>	'Leder Schlafsack',
+		'Single_Panel_Flag'	=>	'Ein Feldflagge',
+		'Multi-Panel_Flag'	=>	'Mehrfeld Flagge',
+		'Standing_Torch'	=>	'Standfackel',
+		'Simple_Bed'	=>	'Einfaches Bett',
+		'Wardrums'	=>	'Kriegstrommel',
+		'Small_Crop_Plot'	=>	'Kleiner Garten',
+		'Medium_Crop_Plot'	=>	'Mittlerer Garten',
+		'Large_Crop_Plot'	=>	'Großer Garten',
+		'Stone_Fireplace'	=>	'Kamin',
+		'Bunk_Bed'	=>	'Doppelbett',
+	),
+	'engram_container' =>	array (
+		'Storage_Box'	=>	'Kiste',
+		'Feeding_Trough'	=>	'Futtertrog',
+		'Compost_Bin'	=>	'Komposter',
+		'Large_Storage_Box'	=>	'Schrank',
+		'Preserving_Bin'	=>	'Räucherkammer',
+		'Bookshelf'	=>	'Bücherregal',
+		'Refrigerator'	=>	'Kühlschrank',
+		'Vault'	=>	'Safe',
+	),
+	'engram_crafting' =>	array (
+		'Campfire'	=>	'Lagerfeuer',
+		'Mortar_And_Pestle'	=>	'Mörser',
+		'Cooking_Pot'	=>	'Kochstelle',
+		'Refining_Forge'	=>	'Schmelzofen',
+		'Smithy'	=>	'Schmiede',
+		'Beer_Barrel'	=>	'Bierfass',
+		'Fabricator'	=>	'Werkbank',
+		'Industrial_Grill'	=>	'Industrie Grill',
+		'Industrial_Cooker'	=>	'Industrie Kocher',
+		'Industrial_Forge'	=>	'Industrie Schmiede',
+		'Chemistry_Bench'	=>	'Chemielabor',
+	),
+
+//		''	=>	'',
 	'engram_thatch'	=>	array(
 		'Thatch_Foundation'		=>	'Fundament',
 		'Thatch_Wall'			=>		'Wand',
@@ -241,6 +282,7 @@ $german_array = array(
 /*Special thanks @ DaChaky*/
 
 	'dossiers'	=>	array(
+		'Allosaurus'	=>	'Allosaurus',
 		'Angler'	=>	'Angler',
 		'Ankylosaurus'	=>	'Ankylosaurus',
 		'Araneo'	=>	'Araneo',
@@ -280,6 +322,7 @@ $german_array = array(
 		'Pachy'		=>	'Pachy',
 		'Paracer'	=>	'Paracer',
 		'Parasaur'	=>	'Parasaurus',
+		'Pelagornis'	=>	'Pelagornis',
 		'Phiomia'	=>	'Phiomia',
 		'Piranha'	=>	'Piranha',
 		'Plesiosaur'	=>	'Plesiosaurus',
@@ -327,7 +370,6 @@ $german_array = array(
 		'Moschops'	=>	'Moschops',
 		'Pachyrhinosaurus'	=>	'Pachyrhinosaurus',
 		'Pegomastax'	=>	'Pegomastax',
-		'Pelagornis'	=>	'Pelagornis',
 		'Purlovia'	=>	'Purlovia',
 		'Tapejara'	=>	'Tapejara',
 		'Therizinosaurus'	=>	'Therizinosaurus',

@@ -75,6 +75,42 @@
 			)
 		);	
 	}
+//misc	
+	$misc = $this->pdh->get('member', 'profile_field', array($this->url_id, 'misc'));
+	$count = count ($misc);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/engram/".$misc[$i].".png";
+		$this->tpl->assign_block_vars(
+			'miscB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $misc[$i],
+			)
+		);	
+	}
+//container	
+	$container = $this->pdh->get('member', 'profile_field', array($this->url_id, 'container'));
+	$count = count ($container);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/engram/".$container[$i].".png";
+		$this->tpl->assign_block_vars(
+			'containerB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $container[$i],
+			)
+		);	
+	}
+//crafting	
+	$crafting = $this->pdh->get('member', 'profile_field', array($this->url_id, 'crafting'));
+	$count = count ($crafting);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/engram/".$crafting[$i].".png";
+		$this->tpl->assign_block_vars(
+			'craftingB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $crafting[$i],
+			)
+		);	
+	}
 //Thatch	
 	$thatch = $this->pdh->get('member', 'profile_field', array($this->url_id, 'thatch'));
 	$count = count ($thatch);

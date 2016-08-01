@@ -80,6 +80,9 @@ if(!class_exists('ark')) {
 			$this->load_type('equip_hand', array($this->lang));
 			$this->load_type('equip_offhand', array($this->lang));
 			$this->load_type('resources', array($this->lang));
+			$this->load_type('engram_container', array($this->lang));
+			$this->load_type('engram_misc', array($this->lang));
+			$this->load_type('engram_crafting', array($this->lang));
 			$this->load_type('engram_thatch', array($this->lang));
 			$this->load_type('engram_wood', array($this->lang));
 			$this->load_type('engram_stone', array($this->lang));
@@ -260,7 +263,7 @@ if(!class_exists('ark')) {
 					'options'		=> $this->equip_offhand[$this->lang],
 					'sort'			=> 6,
 				),
-			//Profilfelden reiter Engrams
+			//Profifelder reiter Engrams
 				'resources'	=> array(
 					'type'			=> 'multiselect',
 					'category'		=> 'engram',
@@ -268,6 +271,33 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->resources[$this->lang],
+					'sort'			=> 1,
+				),
+				'misc'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_misc',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_misc[$this->lang],
+					'sort'			=> 1,
+				),
+				'container'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_containers',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_container[$this->lang],
+					'sort'			=> 1,
+				),
+				'crafting'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_crafting_station',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_crafting[$this->lang],
 					'sort'			=> 1,
 				),
 				'thatch'	=> array(
