@@ -23,42 +23,42 @@ if ( !defined('EQDKP_INC') ){
 }
 	//equip_head
 	$equip_head = $this->pdh->get('member', 'profile_field', array($this->url_id, 'head'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_head.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_head.".png";
 	$this->tpl->assign_vars(array(
 		'HEAD_ICON'	=> $engramicon,
 		'HEAD_NAME'	=> $equip_head,
 	));
 	//equip_body
 	$equip_body = $this->pdh->get('member', 'profile_field', array($this->url_id, 'body'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_body.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_body.".png";
 	$this->tpl->assign_vars(array(
 		'BODY_ICON'	=> $engramicon,
 		'BODY_NAME'	=> $equip_body,
 	));
 	//equip_leg
 	$equip_leg = $this->pdh->get('member', 'profile_field', array($this->url_id, 'legs'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_leg.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_leg.".png";
 	$this->tpl->assign_vars(array(
 		'LEG_ICON'	=> $engramicon,
 		'LEG_NAME'	=> $equip_leg,
 	));
 	//equip_feet
 	$equip_feet = $this->pdh->get('member', 'profile_field', array($this->url_id, 'feet'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_feet.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_feet.".png";
 	$this->tpl->assign_vars(array(
 		'FEET_ICON'	=> $engramicon,
 		'FEET_NAME'	=> $equip_feet,
 	));
 	//equip_hand
 	$equip_hand = $this->pdh->get('member', 'profile_field', array($this->url_id, 'hand'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_hand.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_hand.".png";
 	$this->tpl->assign_vars(array(
 		'HAND_ICON'	=> $engramicon,
 		'HAND_NAME'	=> $equip_hand,
 	));
 	//equip_offhand
 	$equip_offhand = $this->pdh->get('member', 'profile_field', array($this->url_id, 'offhand'));
-	$engramicon = $this->server_path."games/ark/profiles/engram/".$equip_offhand.".png";
+	$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$equip_offhand.".png";
 	$this->tpl->assign_vars(array(
 		'OFFHAND_ICON'	=> $engramicon,
 		'OFFHAND_NAME'	=> $equip_offhand,

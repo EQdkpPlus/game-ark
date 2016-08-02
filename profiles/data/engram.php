@@ -141,6 +141,30 @@ if ( !defined('EQDKP_INC') ){
 			)
 		);	
 	}
+//tools/weapons
+	$tools = $this->pdh->get('member', 'profile_field', array($this->url_id, 'tools'));
+	$count = count ($tools);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$tools[$i].".png";
+		$this->tpl->assign_block_vars(
+			'toolsB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $tools[$i],
+			)
+		);	
+	}
+//ammunition
+	$ammunition = $this->pdh->get('member', 'profile_field', array($this->url_id, 'ammunition'));
+	$count = count ($ammunition);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$ammunition[$i].".png";
+		$this->tpl->assign_block_vars(
+			'ammunitionB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $ammunition[$i],
+			)
+		);	
+	}
 /*dummy
 
 	$xxx = $this->pdh->get('member', 'profile_field', array($this->url_id, 'xxx'));

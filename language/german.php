@@ -67,7 +67,7 @@ $german_array = array(
 		'uc_engrams'	=> 'Engram',
 		'tab_engram'	=> 'Engram',
 		'tab_dino'	=> 'Dossiers',
-		//beginn crafting categories
+	//beginn crafting categories
 		//
 		'uc_resource'	=>	'Resourcen',
 		//
@@ -82,11 +82,8 @@ $german_array = array(
 		//
 		'uc_vehicles'	=>	'Fahrzeuge',
 		//
-		'uc_tools'	=>	'Werkzeuge',
+		'uc_tools'	=>	'Waffen/Werkzeuge',
 		//
-		'uc_weapons'	=>	'Waffen',
-		'uc_melee'	=>	'Nahkampf',
-		'uc_ranged'	=>	'Fernkampf',
 		'uc_ammunition'	=>	'Munition',
 		'uc_explosives'	=>	'Explosives',
 		'uc_emplacements'	=>	'Geschütze',
@@ -103,7 +100,7 @@ $german_array = array(
 		'uc_shields'	=>	'Schilde',
 		//
 		'uc_saddles'	=>	'Sättel',
-		//end crafting categories
+	//end crafting categories
 	),
 	//Char-Equipent Variablennamen nach http://ark.gamepedia.com/Crafting
 	'equip_head'	=>	array(
@@ -320,7 +317,67 @@ $german_array = array(
 	'engram_vehicles'	=>	array(
 		'Wooden_Raft'	=>	'Floß',
 	),
-		
+	'engram_tools'	=>	array(
+		'Torch'	=>	'Fackel',
+		'Stone_Pick'	=>	'Steinpicke',
+		'Note'	=>	'Notiz',
+		'Stone_Hatchet'	=>	'Steinaxt',
+		'Waterskin'	=>	'Wasserschlauch',
+		'Paintbrush'	=>	'Pinsel',
+		'Blood_Extraction_Syringe'	=>	'Blutabnahme Spritze',
+		'Compass'	=>	'Kompass',
+		'Flare_Gun'	=>	'Leuchtpistole',
+		'Spyglass'	=>	'Fernglas',
+		'Fishing_Rod'	=>	'Angelrute',
+		'Magnifying_Glass'	=>	'Vergrößerungsglas',
+		'Radio'	=>	'Funkgerät',
+		'Smoke_Grenade'	=>	'Rauchgranate',
+		'Metal_Pick'	=>	'Metalpike',
+		'Metal_Hatchet'	=>	'Metalaxt',
+		'Water_Jar'	=>	'Wasserglas',
+		'Metal_Sickle'	=>	'Metalsichel',
+		'GPS'	=>	'GPS',
+		'Canteen'	=>	'Wasserflasche',
+		'Spray_Painter'	=>	'Sprühpistole',
+		'Transponder_Tracker'	=>	'Transponder Empfänger',
+		'Transponder_Node'	=>	'Transponder Sender',
+		'Spear'	=>	'Speer',
+		'Wooden_Club'	=>	'Keule',
+		'Pike'	=>	'Pike',
+		'Metal_Sword'	=>	'Metallschwert',
+		'Electric_Prod'	=>	'Elektrostab',
+		'Slingshot'	=>	'Steinschleuder',
+		'Bola'	=>	'Bola',
+		'Bow'	=>	'Bogen',
+		'Crossbow'	=>	'Armbrust',
+		'Simple_Pistol'	=>	'Einfache Pistole',
+		'Primitive_Cannon'	=>	'Primitive Kanone',
+		'Longneck_Rifle'	=>	'Langflinte',
+		'Shotgun'	=>	'Schrotflinte',
+		'Fabricated_Pistol'	=>	'Pistole',
+		'Pump-Action_Shotgun'	=>	'Pumpgun',
+		'Assault_Rifle'	=>	'Sturmgewehr',
+		'Rocket_Launcher'	=>	'Racketenwerfer',
+		'Compound_Bow'	=>	'Kompositbogen',
+		'Fabricated_Sniper_Rifle'	=>	'Scharfschützengewehr',
+	),
+	'engram_ammunition'	=>	array(
+		'Stone_Arrow'	=>	'Steinpfeil',
+		'Tranquilizer_Arrow'	=>	'Narkosepfeil, Bogen',
+		'Ballista_Bolt'	=>	'Bolzen für Balliste',
+		'Simple_Bullet'	=>	'Einfache Kugel',
+		'Simple_Rifle_Ammo'	=>	'Munition für Langflinte',
+		'Cannon_Ball'	=>	'Kanonenkugel',
+		'Simple_Shotgun_Ammo'	=>	'Munition für Schrotflinte',
+		'Chain_Bola'	=>	'Kettenbola',
+		'Grappling_Hook'	=>	'Enterhacken',
+		'Advanced_Bullet'	=>	'Muntion für Pistole',
+		'Advanced_Rifle_Bullet'	=>	'Munition für Sturmgewehr',
+		'Rocket_Propelled_Grenade'	=>	'Rakete',
+		'Tranquilizer_Dart'	=>	'Narkosepfeil, Gewehr',
+		'Metal_Arrow'	=>	'Metalpfeil',
+		'Advanced_Sniper_Bullet'	=>	'Munition für Scharfschützengewehr',
+	),	
 		
 		
 	// Dinos

@@ -23,16 +23,16 @@
   
 	$this->jquery->Tab_header('char1_tabs');
 	$this->tpl->add_css("
-		.wows-picture {
+		.ark-picture {
 			margin-left: auto;
 			margin-right: auto;
 		}
 
-		.wows-picture img {
+		.ark-picture img {
 			max-width: 800px;
 			padding: 5px;
 		}
-		.wows-tab {
+		.ark-tab {
 			outline: none;
 			border-color: #008989;
 			border-radius: 10px; 
