@@ -79,13 +79,16 @@ if(!class_exists('ark')) {
 			$this->load_type('equip_feet', array($this->lang));
 			$this->load_type('equip_hand', array($this->lang));
 			$this->load_type('equip_offhand', array($this->lang));
-			$this->load_type('resources', array($this->lang));
+			$this->load_type('engram_resources', array($this->lang));
 			$this->load_type('engram_container', array($this->lang));
 			$this->load_type('engram_misc', array($this->lang));
 			$this->load_type('engram_crafting', array($this->lang));
 			$this->load_type('engram_thatch', array($this->lang));
 			$this->load_type('engram_wood', array($this->lang));
 			$this->load_type('engram_stone', array($this->lang));
+			$this->load_type('engram_metal', array($this->lang));
+			$this->load_type('engram_greenhouse', array($this->lang));
+			$this->load_type('engram_vehicles', array($this->lang));
 			$this->load_type('dossiers', array($this->lang));
 			$fields = array(
 			//Profilfelden reiter charakter
@@ -270,7 +273,7 @@ if(!class_exists('ark')) {
 					'lang'			=> 'uc_resources',
 					'undeletable'	=> true,
 					'visible'		=> true,
-					'options'		=> $this->resources[$this->lang],
+					'options'		=> $this->engram_resources[$this->lang],
 					'sort'			=> 1,
 				),
 				'misc'	=> array(
@@ -280,7 +283,7 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_misc[$this->lang],
-					'sort'			=> 1,
+					'sort'			=> 2,
 				),
 				'container'	=> array(
 					'type'			=> 'multiselect',
@@ -289,7 +292,7 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_container[$this->lang],
-					'sort'			=> 1,
+					'sort'			=> 3,
 				),
 				'crafting'	=> array(
 					'type'			=> 'multiselect',
@@ -298,7 +301,7 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_crafting[$this->lang],
-					'sort'			=> 1,
+					'sort'			=> 4,
 				),
 				'thatch'	=> array(
 					'type'			=> 'multiselect',
@@ -307,7 +310,7 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_thatch[$this->lang],
-					'sort'			=> 2,
+					'sort'			=> 5,
 				),
 				'wood'	=> array(
 					'type'			=> 'multiselect',
@@ -316,7 +319,7 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_wood[$this->lang],
-					'sort'			=> 3,
+					'sort'			=> 6,
 				),
 				'stone'	=> array(
 					'type'			=> 'multiselect',
@@ -325,7 +328,34 @@ if(!class_exists('ark')) {
 					'undeletable'	=> true,
 					'visible'		=> true,
 					'options'		=> $this->engram_stone[$this->lang],
-					'sort'			=> 4,
+					'sort'			=> 7,
+				),
+				'metal'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_metal',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_metal[$this->lang],
+					'sort'			=> 8,
+				),
+				'greenhouse'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_greenhouse',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_greenhouse[$this->lang],
+					'sort'			=> 9,
+				),
+				'vehicles'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_vehicles',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_vehicles[$this->lang],
+					'sort'			=> 10,
 				),
 			);
 			return $fields;

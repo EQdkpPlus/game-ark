@@ -168,7 +168,7 @@ $german_array = array(
 	),
 //Engram,Variablennamen nach http://ark.gamepedia.com/Crafting
 //Resourcen
-	'resources'	=>	array(
+	'engram_resources'	=>	array(
 		'Sparkpowder'	=>	'Zündpulver',
 		'Gunpowder'	=>	'Schießpulver',
 		'Cementing_Paste'	=>	'Zementpaste',
@@ -244,7 +244,7 @@ $german_array = array(
 		'Wooden_Ladder'	=>	'Leiter',
 		'Wooden_Pillar'	=>	'Säule',
 		'Wooden_Railing'	=>	'Geländer',
-		'Wooden_Ramp'	=>	'HRampe',
+		'Wooden_Ramp'	=>	'Rampe',
 		'Wooden_Shield'	=>	'Schild',
 		'Wooden_Sign'	=>	'Aufstellschild',
 		'Wooden_Spike_Wall'	=>	'Spitzen',
@@ -277,6 +277,52 @@ $german_array = array(
 		'Stone_Wall'	=>	'Wand',
 		'Stone_Windowframe'	=>	'Fensterrahmen',
 	),
+	'engram_metal'	=>	array (
+		'Metal_Spike_Wall'	=>	'Spitzen',
+		'Metal_Sign'	=>	'Aufstellschild',
+		'Metal_Doorframe'	=>	'Türrahmen',
+		'Sloped_Metal_Wall_Right'	=>	'Schräge Wand, rechts',
+		'Metal_Railing'	=>	'Geländer',
+		'Metal_Foundation'	=>	'Fundament',
+		'Metal_Wall'	=>	'Wand',
+		'Metal_Wall_Sign'	=>	'Wandschild',
+		'Sloped_Metal_Wall_Left'	=>	'Schräge Wand, links',
+		'Metal_Door'	=>	'Tür',
+		'Metal_Ramp'	=>	'Rampe',
+		'Metal_Pillar'	=>	'Stütze',
+		'Metal_Ceiling'	=>	'Decke',
+		'Sloped_Metal_Roof'	=>	'Schräges Dach',
+		'Metal_Hatchframe'	=>	'Lucke',
+		'Metal_Fence_Foundation'	=>	'Zaunfundament',
+		'Metal_Trapdoor'	=>	'Falltür',
+		'Metal_Dinosaur_Gateway'	=>	'Dinsaurier-Torbogen',
+		'Metal_Dinosaur_Gate'	=>	'Dinosaurier-Tor',
+		'Metal_Ladder'	=>	'Leiter',
+		'Metal_Windowframe'	=>	'Fensterrahmen',
+		'Metal_Billboard'	=>	'Tafel',
+		'Metal_Window'	=>	'Fenster',
+		'Metal_Catwalk'	=>	'Steg',
+		'Behemoth_Gateway'	=>	'Behemoth Torbogen',
+		'Behemoth_Gate'	=>	'Behemoth Tor',
+		),
+		
+	'engram_greenhouse'	=>	array(
+		'Greenhouse_Window'	=>	'Fenster',
+		'Greenhouse_Wall'	=>	'Wand',
+		'Greenhouse_Doorframe'	=>	'Türrhamen',
+		'Greenhouse_Ceiling'	=>	'Decke',
+		'Greenhouse_Door'	=>	'Tür',
+		'Sloped_Greenhouse_Wall_Right'	=>	'Schräge Wand, rechts',
+		'Sloped_Greenhouse_Roof'	=>	'Schräges Dach',
+		'Sloped_Greenhouse_Wall_Left'	=>	'Schräge Wand, links',
+		''	=>	'',
+	),	
+	'engram_vehicles'	=>	array(
+		'Wooden_Raft'	=>	'Floß',
+	),
+		
+		
+		
 	// Dinos
 	
 /*Special thanks @ DaChaky*/
