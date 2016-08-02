@@ -25,7 +25,7 @@ if ( !defined('EQDKP_INC') ){
 	$resources = $this->pdh->get('member', 'profile_field', array($this->url_id, 'resources'));
 	$count = count ($resources);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$resources[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$resources[$i].".png";
 		$this->tpl->assign_block_vars(
 			'resourcesB', array(
 					'ICON'	=> $engramicon,
@@ -37,7 +37,7 @@ if ( !defined('EQDKP_INC') ){
 	$misc = $this->pdh->get('member', 'profile_field', array($this->url_id, 'misc'));
 	$count = count ($misc);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$misc[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$misc[$i].".png";
 		$this->tpl->assign_block_vars(
 			'miscB', array(
 					'ICON'	=> $engramicon,
@@ -49,7 +49,7 @@ if ( !defined('EQDKP_INC') ){
 	$container = $this->pdh->get('member', 'profile_field', array($this->url_id, 'container'));
 	$count = count ($container);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$container[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$container[$i].".png";
 		$this->tpl->assign_block_vars(
 			'containerB', array(
 					'ICON'	=> $engramicon,
@@ -61,7 +61,7 @@ if ( !defined('EQDKP_INC') ){
 	$crafting = $this->pdh->get('member', 'profile_field', array($this->url_id, 'crafting'));
 	$count = count ($crafting);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$crafting[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$crafting[$i].".png";
 		$this->tpl->assign_block_vars(
 			'craftingB', array(
 					'ICON'	=> $engramicon,
@@ -73,7 +73,7 @@ if ( !defined('EQDKP_INC') ){
 	$thatch = $this->pdh->get('member', 'profile_field', array($this->url_id, 'thatch'));
 	$count = count ($thatch);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$thatch[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$thatch[$i].".png";
 		$this->tpl->assign_block_vars(
 			'thatchB', array(
 					'ICON'	=> $engramicon,
@@ -85,7 +85,7 @@ if ( !defined('EQDKP_INC') ){
 	$wood = $this->pdh->get('member', 'profile_field', array($this->url_id, 'wood'));
 	$count = count ($wood);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$wood[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$wood[$i].".png";
 		$this->tpl->assign_block_vars(
 			'woodB', array(
 					'ICON'	=> $engramicon,
@@ -97,7 +97,7 @@ if ( !defined('EQDKP_INC') ){
 	$stone = $this->pdh->get('member', 'profile_field', array($this->url_id, 'stone'));
 	$count = count ($stone);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$stone[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$stone[$i].".png";
 		$this->tpl->assign_block_vars(
 			'stoneB', array(
 					'ICON'	=> $engramicon,
@@ -109,7 +109,7 @@ if ( !defined('EQDKP_INC') ){
 	$metal = $this->pdh->get('member', 'profile_field', array($this->url_id, 'metal'));
 	$count = count ($metal);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$metal[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$metal[$i].".png";
 		$this->tpl->assign_block_vars(
 			'metalB', array(
 					'ICON'	=> $engramicon,
@@ -121,7 +121,7 @@ if ( !defined('EQDKP_INC') ){
 	$greenhouse = $this->pdh->get('member', 'profile_field', array($this->url_id, 'greenhouse'));
 	$count = count ($greenhouse);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$greenhouse[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$greenhouse[$i].".png";
 		$this->tpl->assign_block_vars(
 			'greenhouseB', array(
 					'ICON'	=> $engramicon,
@@ -133,7 +133,7 @@ if ( !defined('EQDKP_INC') ){
 	$vehicles = $this->pdh->get('member', 'profile_field', array($this->url_id, 'vehicles'));
 	$count = count ($vehicles);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$vehicles[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$vehicles[$i].".png";
 		$this->tpl->assign_block_vars(
 			'vehiclesB', array(
 					'ICON'	=> $engramicon,
@@ -146,7 +146,7 @@ if ( !defined('EQDKP_INC') ){
 	$xxx = $this->pdh->get('member', 'profile_field', array($this->url_id, 'xxx'));
 	$count = count ($xxx);
 	for ($i=0; $i<$count; $i++){
-		$engramicon = $this->server_path."games/ark/profiles/engram/".$xxx[$i].".png";
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$xxx[$i].".png";
 		$this->tpl->assign_block_vars(
 			'xxxB', array(
 					'ICON'	=> $engramicon,
