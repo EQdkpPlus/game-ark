@@ -91,6 +91,8 @@ if(!class_exists('ark')) {
 			$this->load_type('engram_vehicles', array($this->lang));
 			$this->load_type('engram_tools', array($this->lang));
 			$this->load_type('engram_ammunition', array($this->lang));
+			$this->load_type('engram_explosives', array($this->lang));
+			$this->load_type('engram_turret', array($this->lang));
 			$this->load_type('dossiers', array($this->lang));
 			$fields = array(
 			//Profilfelden reiter charakter
@@ -376,6 +378,24 @@ if(!class_exists('ark')) {
 					'visible'		=> true,
 					'options'		=> $this->engram_ammunition[$this->lang],
 					'sort'			=> 11,
+				),
+				'explosives'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_explosives',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_explosives[$this->lang],
+					'sort'			=> 12,
+				),
+				'turret'	=> array(
+					'type'			=> 'multiselect',
+					'category'		=> 'engram',
+					'lang'			=> 'uc_turret',
+					'undeletable'	=> true,
+					'visible'		=> true,
+					'options'		=> $this->engram_turret[$this->lang],
+					'sort'			=> 12,
 				),
 				
 			);

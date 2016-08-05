@@ -79,6 +79,7 @@ $german_array = array(
 		'uc_stone'	=>	'Stein',
 		'uc_metal'	=>	'Metall',
 		'uc_greenhouse'	=>	'Gewächshaus',
+		'uc_turret'	=>	'Geschütze',
 		//
 		'uc_vehicles'	=>	'Fahrzeuge',
 		//
@@ -351,7 +352,6 @@ $german_array = array(
 		'Bow'	=>	'Bogen',
 		'Crossbow'	=>	'Armbrust',
 		'Simple_Pistol'	=>	'Einfache Pistole',
-		'Primitive_Cannon'	=>	'Primitive Kanone',
 		'Longneck_Rifle'	=>	'Langflinte',
 		'Shotgun'	=>	'Schrotflinte',
 		'Fabricated_Pistol'	=>	'Pistole',
@@ -378,7 +378,21 @@ $german_array = array(
 		'Metal_Arrow'	=>	'Metalpfeil',
 		'Advanced_Sniper_Bullet'	=>	'Munition für Scharfschützengewehr',
 	),	
-		
+	'engram_explosives'	=> array (
+		'Grenade'	=>	'Granate',
+		'Improvised_Explosive_Device'	=>	'Improvisierte Sprengladung',
+		'C4_Remote_Detonator'	=>	'C4 Fernzünder',
+		'C4_Charge'	=>	'C4 Ladung',
+		'Homing_Underwater_Mine'	=>	'Seemine',
+	),
+	'engram_turret'	=>	array (
+		'Ballista_Turret'	=>	'Balliste',
+		'Catapult_Turret'	=>	'Katapult',
+		'Primitive_Cannon'	=>	'Primitive Kanone',
+		'Auto_Turret'	=>	'Automatisches Geschütz',
+		'Minigun_Turret'	=>	'Minigun',
+		'Rocket_Turret'	=>	'Raketengeschütz',
+	),
 		
 	// Dinos
 	
@@ -411,7 +425,7 @@ $german_array = array(
 		'Gigantopithecus'	=>	'Riesenaffe',
 		'Ichthyosaurus'	=>	'Ichthyosaurus',
 		'Kairuku'	=>	'Kairuku',
-		'Leech'		=>	'Egel',
+		'Leech'		=>	'Blutegel',
 		'Lystrosaurus'	=>	'Lystrosaurus',
 		'Mammoth'	=>	'Mammut',
 		'Manta'		=>	'Manta',
@@ -440,7 +454,7 @@ $german_array = array(
 		'Sarcosuchus'	=>	'Krokodil',
 		'Spinosaur'	=>	'Spinosaurus',
 		'Stegosaurus'	=>	'Stegosaurus',
-		'Terror Bird'	=>	'Rächvogel',
+		'Terror Bird'	=>	'Terrorvogel',
 		'Titanoboa'	=>	'Titanoboa',
 		'Titanomyrma'	=>	'Titanameise',
 		'Titanosaur'	=>	'Titanosaurus',

@@ -165,6 +165,32 @@ if ( !defined('EQDKP_INC') ){
 			)
 		);	
 	}
+//explosives	
+	$explosives = $this->pdh->get('member', 'profile_field', array($this->url_id, 'explosives'));
+	$count = count ($explosives);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$explosives[$i].".png";
+		$this->tpl->assign_block_vars(
+			'explosivesB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $explosives[$i],
+			)
+		);	
+	}
+//Turrets
+	$turret = $this->pdh->get('member', 'profile_field', array($this->url_id, 'turret'));
+	$count = count ($turret);
+	for ($i=0; $i<$count; $i++){
+		$engramicon = $this->server_path."games/ark/profiles/pics/engram/".$turret[$i].".png";
+		$this->tpl->assign_block_vars(
+			'turretB', array(
+					'ICON'	=> $engramicon,
+					'NAME'	=> $turret[$i],
+			)
+		);	
+	}
+	
+	
 /*dummy
 
 	$xxx = $this->pdh->get('member', 'profile_field', array($this->url_id, 'xxx'));
