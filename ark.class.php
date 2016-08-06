@@ -95,7 +95,7 @@ if(!class_exists('ark')) {
 			$this->load_type('engram_turret', array($this->lang));
 			$this->load_type('dossiers', array($this->lang));
 			$fields = array(
-			//Profilfelden reiter charakter
+			//Profilfelder reiter charakter
 				'level'	=> array(
 					'type'			=> 'spinner',
 					'category'		=> 'character',
@@ -115,7 +115,7 @@ if(!class_exists('ark')) {
 					'options'		=> $this->dossiers[$this->lang],
 					'sort'			=> 2,
 				),
-			//Profilfelden reiter Stats
+			//Profilfelder reiter Stats
 				'life'	=> array(
 					'type'			=> 'spinner',
 					'category'		=> 'stats',

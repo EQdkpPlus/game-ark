@@ -177,7 +177,7 @@ $german_array = array(
 //Strukturen
 	'engram_misc'	=>	array(
 		'Hide_Sleeping_Bag'	=>	'Leder Schlafsack',
-		'Single_Panel_Flag'	=>	'Ein Feldflagge',
+		'Single_Panel_Flag'	=>	'Einfeld Flagge',
 		'Multi-Panel_Flag'	=>	'Mehrfeld Flagge',
 		'Standing_Torch'	=>	'Standfackel',
 		'Simple_Bed'	=>	'Einfaches Bett',
