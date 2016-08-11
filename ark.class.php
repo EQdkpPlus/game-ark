@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('ark')) {
 	class ark extends game_generic {#
 		protected static $apiLevel	= 20;
-		public $version				= '0.1.0';
+		public $version				= '0.245.9';
 		protected $this_game		= 'ark';
 		protected $types			= array('classes','roles');
 		protected $classes			= array();
